@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Baby 💜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="wiwi.css">
+</head>
+<body>
+<div id="app">
+
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <!-- PAGE 1 -->
+  <div class="page active" id="page1">
+    <div class="split">
+      <div class="left-side">
+        <h1 class="hbd-title">Happy Birthday<br>Baby!</h1>
+        <button class="btn-more" onclick="goTo(1,2)">More</button>
+      </div>
+      <div class="middle-col">
+        <div class="cake-wrap">🎂</div>
+      </div>
+      <div class="right-side">
+        <div class="photo-frame">
+          <img src="halaman1/kepinmini.png" alt="Baby">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page" id="page2">
+    <div id="step-envelope" style="display:flex; flex-direction:column; align-items:center; gap:1rem;">
+      <div onclick="showLove()" style="display:flex; flex-direction:column; align-items:center; gap:1rem;">
+        <div class="env-icon">💌</div>
+        <p class="env-hint">tap me !!</p>
+      </div>
+      <button id="btn-back-from3" onclick="goTo(2,1)">← Back</button>
+    </div>
+
+    <div id="step-love">
+      <p class="love-question">Do You LOVE Me? 💕</p>
+      <button class="btn-yes" onclick="showGift()">Yes 💗</button>
+    </div>
+
+    <button class="btn-no" id="btnNo"
+      onmouseenter="runAway()"
+      ontouchstart="runAway()">No 🙅</button>
+
+    <div id="step-gift" onclick="openGift()">
+      <div class="gift-icon">🎁</div>
+      <p class="gift-hint">OPEN IT UP !!</p>
+    </div>
+
+    <div id="step-letter">
+      <div class="letter-photos">
+        <div class="photo-col">
+          <div class="p2-photo"><img src="halaman2/foto 2.png"></div>
+        </div>
+        <div class="letter-card">
+          <div class="lt">My Dearest Kevin</div>
+          <div class="lb">
+            Happy birthdayyy sayangggggg<br><br>
+            To my handsome and cutest man, I just want you to know that im so proud of you and you have no idea how much you mean to me.<br><br>
+            You've gone this far, aku tau pasti ga mudah buat kamu tapi aku pasti selalu support kamu apapun yang terbaik buat kamu even aku gabisa lakuin banyak hal buat kamu tapi aku mau lakuin banyak hal sru sama kamu dan aku terus nemenin kamu in every situation.<br><br>
+            So happy to be part of your life, semoga di ulang tahun yang sekarang kamu di beri kemudahan dalam mengejar apa yang kamu impikan, selalu disehatkan dan selalu ingat kalo kamu ga sendirian karnaaa adaaa akuuuu heheheh<br><br>
+            Selamat ulang tahunnnnn sayanggggggg i loveeeee youuuu soooo muchhhhhh, hadiah aku kecil but i hope you like ittttt made this with all my hearttt, nanti aku jajanin gacoan.<br><br>
+          </div>
+          <div class="ls">— With Love, wiwi 🌸</div>
+        </div>
+        <div class="photo-col">
+          <div class="p2-photo"><img src="halaman2/foto 1.png"></div>
+        </div>
+      </div>
+      <div class="letter-nav">
+        <button class="btn-letter-next" onclick="goTo(2,3)">Next 💜</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page" id="page3">
+    <div class="gingham-bg"></div>
+
+    <span class="star" style="top:6%;left:5%;animation-delay:0s">✨</span>
+    <span class="star" style="top:10%;right:7%;animation-delay:0.4s">💫</span>
+    <span class="star" style="top:45%;left:3%;animation-delay:0.5s">🌸</span>
+    <span class="star" style="top:40%;right:4%;animation-delay:0.9s">🌸</span>
+
+    <div class="pg3-scroll" id="pg3Scroll">
+      <div class="pg3-hero">
+        <div class="hero-side">
+          <img src="halaman3/foto kiri 2.png">
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center;">
+          <div class="scroll-hint">scroll down ↓</div>
+          <div class="hero-center">
+            <img src="halaman3/kucing tengah.png">
+          </div>
+        </div>
+        <div class="hero-side">
+          <img src="halaman3/foto kanan 1.png">
+        </div>
+      </div>
+
+      <div class="photo-row left" style="margin-top:5rem;">
+        <div class="zz-photo"><img src="halaman3/card.png"></div>
+      </div>
+      <div class="photo-row right">
+        <div class="zz-photo"><img src="halaman3/flower 1.png"></div>
+      </div>
+      <div class="photo-row left">
+        <div class="zz-photo"><img src="halaman3/card2.png"></div>
+      </div>
+      <div class="photo-row right">
+        <div class="zz-photo"><img src="halaman3/flower 2.png"></div>
+      </div>
+      <div class="photo-row left">
+        <div class="zz-photo"><img src="halaman3/card 3.png"></div>
+      </div>
+      <div class="photo-row right">
+        <div class="zz-photo"><img src="halaman3/flower 3 (2).png"></div>
+      </div>
+      <div class="photo-row left">
+        <div class="zz-photo"><img src="halaman3/card 4.png"></div>
+      </div>
+      <div class="photo-row right">
+        <div class="zz-photo"><img src="halaman3/jellyfish2.png"></div>
+      </div>
+      <div class="photo-row" style="justify-content:center;">
+        <div class="zz-photo" style="transform:none;"><img src="halaman3/card 5.png"></div>
+      </div>
+
+      <div class="photo-row" style="justify-content:center; flex-direction:column; align-items:center; gap:1rem; padding:1rem 2rem 0;">
+        <div class="zz-photo" style="transform:none;">
+          <img src="halaman3/sertifikat.png">
+        </div>
+        <a class="btn-download" href="halaman3/sertifikat.png" download>DOWNLOAD ME!</a>
+      </div>
+
+      <div style="height:100px"></div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="music-bar">
+        <span class="music-note">🎵</span>
+        <span class="music-text">Last Night On Earth — Green Day</span>
+        <button class="music-btn" id="playBtn" onclick="toggleMusic()">▶</button>
+        <div class="progress-wrap" onclick="seekMusic(event)">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+      <button class="btn-back2" onclick="goTo(3,2)">← Back</button>
+    </div>
+  </div>
+
+  <audio id="bgMusic" preload="auto">
+    <source src="halaman3/songformybf2.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="confettiSound">
+    <source src="halaman2/confetti.mp3" type="audio/mpeg">
+  </audio>
+
+</div>
+<script src="kepiw.js"></script>
+</body>
+</html>
